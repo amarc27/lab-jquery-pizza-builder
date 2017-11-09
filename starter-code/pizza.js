@@ -79,5 +79,7 @@ function priceThree() {
 }
 
 
-var tot = priceOne() + priceTwo() + priceThree();
-$("aside strong").text("$" + (10 + tot));
+$(".btn").click(function () {
+  var tot = priceOne() + priceTwo() + priceThree();
+  $("aside strong").text("$" + (10 + tot))
+});
